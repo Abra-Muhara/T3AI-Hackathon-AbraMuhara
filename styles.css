@@ -1,0 +1,46 @@
+/* Temel vücut ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Taşmayı önlemek için */
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Taşmayı önlemek için */
+}
+
+video {
+    width: 100vw; /* Tam ekran genişlik */
+    height: 100vh; /* Tam ekran yükseklik */
+    object-fit: cover; /* Görüntüyü ekrana düzgün sığdır */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button {
+    position: absolute;
+    bottom: 5%; /* Butonu ekranın biraz yukarısına kaydır */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
